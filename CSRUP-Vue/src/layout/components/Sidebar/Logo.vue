@@ -35,7 +35,7 @@ export default {
   },
   data() {
     return {
-      title: 'CSRUP',
+      title: '治理相关信息分析',
       logo: logoImg
     }
   }
