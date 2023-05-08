@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ESG-Back.iml" filepath="$PROJECT_DIR$/.idea/ESG-Back.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSRUP-Springboot/ruoyi.iml" filepath="$PROJECT_DIR$/CSRUP-Springboot/ruoyi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSRUP-Springboot/ruoyi-admin/ruoyi-admin.iml" filepath="$PROJECT_DIR$/CSRUP-Springboot/ruoyi-admin/ruoyi-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSRUP-Springboot/ruoyi-common/ruoyi-common.iml" filepath="$PROJECT_DIR$/CSRUP-Springboot/ruoyi-common/ruoyi-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSRUP-Springboot/ruoyi-csurp/ruoyi-csurp.iml" filepath="$PROJECT_DIR$/CSRUP-Springboot/ruoyi-csurp/ruoyi-csurp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSRUP-Springboot/ruoyi-framework/ruoyi-framework.iml" filepath="$PROJECT_DIR$/CSRUP-Springboot/ruoyi-framework/ruoyi-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSRUP-Springboot/ruoyi-generator/ruoyi-generator.iml" filepath="$PROJECT_DIR$/CSRUP-Springboot/ruoyi-generator/ruoyi-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSRUP-Springboot/ruoyi-quartz/ruoyi-quartz.iml" filepath="$PROJECT_DIR$/CSRUP-Springboot/ruoyi-quartz/ruoyi-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSRUP-Springboot/ruoyi-system/ruoyi-system.iml" filepath="$PROJECT_DIR$/CSRUP-Springboot/ruoyi-system/ruoyi-system.iml" />
+    </modules>
+  </component>
+</project>

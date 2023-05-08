@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.csrup.mapper.CsurpIndexMapper">
+
+    <resultMap type="CsurpIndex" id="CsurpIndexResult">
+        <result property="id" column="id"/>
+        <result property="parentId" column="parent_id"/>
+        <result property="companyId" column="company_id"/>
+        <result property="name" column="name"/>
+        <result property="sort" column="sort"/>
+        <result property="nature" column="nature"/>
+        <result property="qualitative" column="qualitative"/>
+        <result property="quantify" column="quantify"/>
+        <result property="illustrate" column="illustrate"/>
+        <result property="score" column="score"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+    <sql id="selectCsurpIndexVo">
+        select id,
+               parent_id,
+               company_id,
+               name,
+               sort,
+               nature,
+               qualitative,
+               quantify,
+               illustrate,
+               score,
+               create_by,
+               create_time,
+               update_by,
+               update_time,
+               remark
+        from csurp_index
+    </sql>
+
+    <select id="selectCsurpIndexList" parameterType="CsurpIndex" resultMap="CsurpIndexResult">
+        <include refid="selectCsurpIndexVo"/>
+        <where>
+            <if test="name != null  and name != ''">and name like concat('%', #{name}, '%')</if>
+            <if test="companyId != null  and companyId != ''">and company_id = #{companyId}</if>
+            <if test="qualitative != null  and qualitative != ''">and qualitative = #{qualitative}</if>
+        </where>
+    </select>
+
+    <select id="selectCsurpIndexById" parameterType="Long" resultMap="CsurpIndexResult">
+        <include refid="selectCsurpIndexVo"/>
+        where id = #{id}
+    </select>
+
+    <insert id="insertCsurpIndex" parameterType="CsurpIndex" useGeneratedKeys="true" keyProperty="id">
+        insert into csurp_index
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="parentId != null">parent_id,</if>
+            <if test="companyId != null">company_id,</if>
+            <if test="name != null and name != ''">name,</if>
+            <if test="sort != null">sort,</if>
+            <if test="qualitative != null and qualitative != ''">qualitative,</if>
+            <if test="nature != null and nature != ''">nature,</if>
+            <if test="quantify != null and quantify != ''">quantify,</if>
+            <if test="illustrate != null">illustrate,</if>
+            <if test="score != null">score,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="remark != null">remark,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="parentId != null">#{parentId},</if>
+            <if test="companyId != null">#{companyId},</if>
+            <if test="name != null and name != ''">#{name},</if>
+            <if test="sort != null">#{sort},</if>
+            <if test="nature != null and nature != ''">#{nature},</if>
+            <if test="qualitative != null and qualitative != ''">#{qualitative},</if>
+            <if test="quantify != null and quantify != ''">#{quantify},</if>
+            <if test="illustrate != null">#{illustrate},</if>
+            <if test="score != null">#{score},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="remark != null">#{remark},</if>
+        </trim>
+    </insert>
+
+    <update id="updateCsurpIndex" parameterType="CsurpIndex">
+        update csurp_index
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="parentId != null">parent_id = #{parentId},</if>
+            <if test="companyId != null">company_id = #{companyId},</if>
+            <if test="name != null and name != ''">name = #{name},</if>
+            <if test="sort != null">sort = #{sort},</if>
+            <if test="nature != null and nature != ''">nature = #{nature},</if>
+            <if test="qualitative != null and qualitative != ''">qualitative = #{qualitative},</if>
+            <if test="quantify != null and quantify != ''">quantify = #{quantify},</if>
+            <if test="illustrate != null">illustrate = #{illustrate},</if>
+            <if test="score != null">score = #{score},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="remark != null">remark = #{remark},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteCsurpIndexById" parameterType="Long">
+        delete
+        from csurp_index
+        where id = #{id}
+    </delete>
+
+    <delete id="deleteCsurpIndexByIds" parameterType="String">
+        delete from csurp_index where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>
