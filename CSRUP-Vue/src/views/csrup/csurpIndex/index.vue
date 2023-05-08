@@ -28,7 +28,7 @@
       <el-table-column label="指标名称" align="center" prop="name" show-overflow-tooltip />
       <el-table-column label="层级" align="center" prop="sort" show-overflow-tooltip />
       <el-table-column label="定性" align="center" prop="qualitative" show-overflow-tooltip />
-      <el-table-column label="定量" align="center" prop="quantify" show-overflow-tooltip />
+      <el-table-column labelq="定量" align="center" prop="quantify" show-overflow-tooltip />
       <el-table-column label="填写说明" align="center" prop="illustrate" show-overflow-tooltip />
       <el-table-column label="指标评分" align="center" prop="score" show-overflow-tooltip />
       <el-table-column label="备注" align="center" prop="remark" show-overflow-tooltip />

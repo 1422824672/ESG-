@@ -35,7 +35,7 @@ export default {
   },
   data() {
     return {
-      title: 'CSRUP',
+      title: '绿色环境数据分析',
       logo: logoImg
     }
   }

@@ -1,7 +1,7 @@
 <template>
   <div class="register">
     <el-form ref="registerForm" :model="registerForm" :rules="registerRules" class="register-form">
-      <h3 class="title">企业社会责任承担情况分析平台</h3>
+      <h3 class="title">公司绿色发展信息分析平台</h3>
       <el-form-item prop="username">
         <el-input v-model="registerForm.username" type="text" auto-complete="off" placeholder="账号">
           <svg-icon slot="prefix" icon-class="user" class="el-input__icon input-icon" />
@@ -61,7 +61,7 @@
     </el-form>
     <!--  底部  -->
     <div class="el-register-footer">
-      <span>Copyright © 2018-2023 企业社会责任承担情况分析平台 All Rights Reserved.</span>
+      <span>Copyright © 2018-2023 公司绿色发展信息分析平台 All Rights Reserved.</span>
     </div>
   </div>
 </template>
