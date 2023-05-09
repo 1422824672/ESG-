@@ -68,11 +68,11 @@ export default {
             }
           },
           indicator: [
-            { name: 'Sales', max: 30 },
-            { name: 'Administration', max: 30 },
-            { name: 'Information Techology', max: 30 },
-            { name: 'Customer Support', max: 30 },
-            { name: 'Development', max: 30 },
+            { name: '环境战略和风险管控机制', max: 30 },
+            { name: '能源', max: 30 },
+            { name: '物料', max: 30 },
+            { name: '水资源', max: 30 },
+            { name: '气体排放', max: 30 },
           ]
         },
         legend: {
