@@ -62,7 +62,7 @@ export default {
         },
         xAxis: [{
           type: 'category',
-          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          data: ['2017', '2018', '2019', '2020', '2021', '2022', '2023'],
           axisTick: {
             alignWithLabel: true
           }
@@ -74,21 +74,21 @@ export default {
           }
         }],
         series: [{
-          name: 'pageA',
+          name: '成本',
           type: 'bar',
           stack: 'vistors',
           barWidth: '60%',
           data: [79, 52, 200, 334, 390, 330, 220],
           animationDuration
         }, {
-          name: 'pageB',
+          name: '利润',
           type: 'bar',
           stack: 'vistors',
           barWidth: '60%',
           data: [80, 52, 200, 334, 390, 330, 220],
           animationDuration
         }, {
-          name: 'pageC',
+          name: '营业额',
           type: 'bar',
           stack: 'vistors',
           barWidth: '60%',
