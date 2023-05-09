@@ -64,7 +64,7 @@ export default {
     setOptions({ expectedData, actualData } = {}) {
       this.chart.setOption({
         xAxis: {
-          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          data: ['2017', '2018', '2019', '2020', '2021', '2022', '2023'],
           boundaryGap: false,
           axisTick: {
             show: false
@@ -93,7 +93,7 @@ export default {
           data: ['expected', 'actual']
         },
         series: [{
-          name: 'expected', itemStyle: {
+          name: '环境得分', itemStyle: {
             normal: {
               color: '#FF005A',
               lineStyle: {
@@ -108,26 +108,27 @@ export default {
           animationDuration: 2800,
           animationEasing: 'cubicInOut'
         },
-        {
-          name: 'actual',
-          smooth: true,
-          type: 'line',
-          itemStyle: {
-            normal: {
-              color: '#3888fa',
-              lineStyle: {
-                color: '#3888fa',
-                width: 2
-              },
-              areaStyle: {
-                color: '#f3f8ff'
-              }
-            }
-          },
-          data: actualData,
-          animationDuration: 2800,
-          animationEasing: 'quadraticOut'
-        }]
+        // {
+        //   name: 'actual',
+        //   smooth: true,
+        //   type: 'line',
+        //   itemStyle: {
+        //     normal: {
+        //       color: '#3888fa',
+        //       lineStyle: {
+        //         color: '#3888fa',
+        //         width: 2
+        //       },
+        //       areaStyle: {
+        //         color: '#f3f8ff'
+        //       }
+        //     }
+        //   },
+        //   data: actualData,
+        //   animationDuration: 2800,
+        //   animationEasing: 'quadraticOut'
+        // }
+        ]
       })
     }
   }
