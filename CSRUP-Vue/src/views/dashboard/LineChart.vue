@@ -95,9 +95,9 @@ export default {
         series: [{
           name: '环境得分', itemStyle: {
             normal: {
-              color: '#FF005A',
+              color: '#2d67d5',
               lineStyle: {
-                color: '#FF005A',
+                color: '#5e9f29',
                 width: 2
               }
             }

@@ -59,26 +59,26 @@ export default {
           splitNumber: 8,
           splitArea: {
             areaStyle: {
-              color: 'rgba(127,95,132,.3)',
+              color: 'rgba(162,62,178,0.3)',
               opacity: 1,
               shadowBlur: 45,
-              shadowColor: 'rgba(0,0,0,.5)',
+              shadowColor: 'rgba(131,63,63,0.5)',
               shadowOffsetX: 0,
               shadowOffsetY: 15
             }
           },
           indicator: [
-            { name: 'Sales', max: 30 },
-            { name: 'Administration', max: 30 },
-            { name: 'Information Techology', max: 30 },
-            { name: 'Customer Support', max: 30 },
-            { name: 'Development', max: 30 },
+            { name: '员工权益', max: 30 },
+            { name: '社会贡献', max: 30 },
+            { name: '科技创新', max: 30 },
+            { name: '产品责任', max: 30 },
+            { name: '战略制度', max: 30 },
           ]
         },
         legend: {
           left: 'center',
           bottom: '10',
-          data: ['生态环境数据']
+          data: ['社会责任数据']
         },
         series: [{
           type: 'radar',
@@ -86,7 +86,7 @@ export default {
           areaStyle: {
             normal: {
               shadowBlur: 13,
-              shadowColor: 'rgba(0,0,0,.2)',
+              shadowColor: 'rgba(220,95,94,0.5)',
               shadowOffsetX: 0,
               shadowOffsetY: 10,
               opacity: 1
@@ -95,7 +95,7 @@ export default {
           data: [
             {
               value: [17.6, 21.3, 11.6, 12.4, 14.6],
-              name: '生态环境数据'
+              name: '社会责任数据'
             },
           ],
           animationDuration: animationDuration
