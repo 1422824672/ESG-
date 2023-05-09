@@ -292,7 +292,7 @@ export default {
       this.queryParams.companyId = this.$route.query.companyId
       listCsurpIndex(this.queryParams).then(response => {
         this.indexOptions = [];
-        const index = { id: 0, name: '社会责任', children: [] };
+        const index = { id: 0, name: '绿色环境', children: [] };
         index.children = this.handleTree(response.data, "id");
         this.indexOptions.push(index);
       });
