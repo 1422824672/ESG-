@@ -42,17 +42,9 @@ public class CsurpCompanyController extends BaseController
      */
     @PreAuthorize("@ss.hasPermi('csrup:csurpCompany:list')")
     @GetMapping("/list")
-    public TableDataInfo list(CsurpCompany csurpCompany)
-    {
+    public TableDataInfo list(CsurpCompany csurpCompany) {
         startPage();
-        List<SysRole> roles = getLoginUser().getUser().getRoles();
-        if (roles.size() > 0) {
-            for (int i = 0; i < roles.size(); i++) {
-                if (roles.get(i).getRoleId() == 100L) {
-                    csurpCompany.setId(getLoginUser().getUser().getCompanyId());
-                }
-            }
-        }
+        csurpCompany.setId(getLoginUser().getUser().getCompanyId());
         List<CsurpCompany> list = csurpCompanyService.selectCsurpCompanyList(csurpCompany);
         return getDataTable(list);
     }

@@ -1,20 +1,20 @@
-15:44:13.518 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,55] - Starting RuoYiApplication using Java 1.8.0_321 on BaiQingyang-DESKTOP with PID 17352 (D:\File\Code\Java_code\ESG-Back\CSRUP-Springboot\ruoyi-admin\target\classes started by BaiQingyang in D:\File\Code\Java_code\ESG-Back)
-15:44:13.516 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
-15:44:13.519 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
-15:44:17.331 [restartedMain] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
-15:44:17.332 [restartedMain] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-15:44:17.332 [restartedMain] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-15:44:17.470 [restartedMain] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
-15:44:17.484 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
-15:44:17.484 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-15:44:17.485 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
-15:44:17.579 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-15:44:22.341 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,996] - {dataSource-1} inited
-15:44:24.740 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1220] - Using default implementation for ThreadExecutor
-15:44:24.751 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-15:44:24.752 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.2 created.
-15:44:24.752 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,155] - RAMJobStore initialized.
-15:44:24.753 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+11:37:03.577 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+11:37:03.588 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,55] - Starting RuoYiApplication using Java 1.8.0_321 on BaiQingyang-DESKTOP with PID 11484 (D:\File\Code\Java_code\ESG-Back\CSRUP-Springboot\ruoyi-admin\target\classes started by BaiQingyang in D:\File\Code\Java_code\ESG-Back)
+11:37:03.591 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+11:37:11.492 [restartedMain] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+11:37:11.492 [restartedMain] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+11:37:11.493 [restartedMain] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:37:11.679 [restartedMain] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+11:37:11.697 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+11:37:11.697 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:37:11.697 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+11:37:11.778 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:37:16.749 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,996] - {dataSource-1} inited
+11:37:19.649 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1220] - Using default implementation for ThreadExecutor
+11:37:19.663 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+11:37:19.663 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.2 created.
+11:37:19.664 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,155] - RAMJobStore initialized.
+11:37:19.665 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -22,10 +22,64 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-15:44:24.753 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-15:44:24.753 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1378] - Quartz scheduler version: 2.3.2
-15:44:24.753 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@46aa9649
-15:44:26.399 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
-15:44:26.649 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-15:44:26.657 [restartedMain] INFO  c.r.RuoYiApplication - [logStarted,61] - Started RuoYiApplication in 13.609 seconds (JVM running for 17.45)
-15:44:30.584 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+11:37:19.665 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+11:37:19.665 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1378] - Quartz scheduler version: 2.3.2
+11:37:19.665 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@19998f6c
+11:37:21.614 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+11:37:21.932 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+11:37:21.943 [restartedMain] INFO  c.r.RuoYiApplication - [logStarted,61] - Started RuoYiApplication in 18.996 seconds (JVM running for 22.097)
+11:38:07.798 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:42:16.927 [lettuce-eventExecutorLoop-1-2] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was /8.130.111.197:6379
+11:42:27.022 [lettuce-eventExecutorLoop-1-8] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was 8.130.111.197:6379
+11:42:27.120 [lettuce-nioEventLoop-4-3] INFO  i.l.c.p.ReconnectionHandler - [lambda$null$3,174] - Reconnected to 8.130.111.197:6379
+11:44:27.024 [Druid-ConnectionPool-Create-41806374] INFO  c.a.d.p.DruidAbstractDataSource - [setFailContinuous,1877] - {dataSource-1} failContinuous is true
+11:44:28.347 [Druid-ConnectionPool-Create-41806374] INFO  c.a.d.p.DruidAbstractDataSource - [setFailContinuous,1882] - {dataSource-1} failContinuous is false
+12:21:59.965 [Druid-ConnectionPool-Create-41806374] INFO  c.a.d.p.DruidAbstractDataSource - [setFailContinuous,1877] - {dataSource-1} failContinuous is true
+12:22:00.855 [Druid-ConnectionPool-Create-41806374] INFO  c.a.d.p.DruidAbstractDataSource - [setFailContinuous,1882] - {dataSource-1} failContinuous is false
+12:29:04.924 [lettuce-eventExecutorLoop-1-5] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was /8.130.111.197:6379
+12:29:15.016 [lettuce-eventExecutorLoop-1-8] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was 8.130.111.197:6379
+12:29:25.116 [lettuce-eventExecutorLoop-1-2] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was 8.130.111.197:6379
+12:29:35.229 [lettuce-eventExecutorLoop-1-4] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was 8.130.111.197:6379
+12:29:45.315 [lettuce-eventExecutorLoop-1-6] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was 8.130.111.197:6379
+12:29:46.642 [lettuce-nioEventLoop-4-8] INFO  i.l.c.p.ReconnectionHandler - [lambda$null$3,174] - Reconnected to 8.130.111.197:6379
+12:37:45.727 [Druid-ConnectionPool-Create-41806374] INFO  c.a.d.p.DruidAbstractDataSource - [setFailContinuous,1877] - {dataSource-1} failContinuous is true
+12:37:46.623 [Druid-ConnectionPool-Create-41806374] INFO  c.a.d.p.DruidAbstractDataSource - [setFailContinuous,1882] - {dataSource-1} failContinuous is false
+14:11:26.780 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+14:11:27.786 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+14:11:27.786 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+14:11:27.787 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+14:11:27.787 [SpringApplicationShutdownHook] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:11:27.790 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2138] - {dataSource-1} closing ...
+14:11:27.792 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2211] - {dataSource-1} closed
+15:39:42.788 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,55] - Starting RuoYiApplication using Java 1.8.0_321 on BaiQingyang-DESKTOP with PID 15604 (D:\File\Code\Java_code\ESG-Back\CSRUP-Springboot\ruoyi-admin\target\classes started by BaiQingyang in D:\File\Code\Java_code\ESG-Back)
+15:39:42.789 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+15:39:42.792 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,686] - The following 1 profile is active: "druid"
+15:39:45.162 [restartedMain] INFO  o.a.c.c.AprLifecycleListener - [log,173] - Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+15:39:45.163 [restartedMain] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+15:39:45.163 [restartedMain] INFO  o.a.c.c.AprLifecycleListener - [log,173] - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+15:39:45.167 [restartedMain] INFO  o.a.c.c.AprLifecycleListener - [log,173] - OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+15:39:45.176 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:39:45.176 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:39:45.177 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.63]
+15:39:45.249 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:39:50.032 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,996] - {dataSource-1} inited
+15:39:56.402 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1220] - Using default implementation for ThreadExecutor
+15:39:56.415 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:39:56.416 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.2 created.
+15:39:56.417 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,155] - RAMJobStore initialized.
+15:39:56.418 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+15:39:56.418 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+15:39:56.418 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1378] - Quartz scheduler version: 2.3.2
+15:39:56.418 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@18d8b452
+15:39:58.185 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:39:58.460 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+15:39:58.469 [restartedMain] INFO  c.r.RuoYiApplication - [logStarted,61] - Started RuoYiApplication in 16.163 seconds (JVM running for 18.766)
+15:42:00.692 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:42:04.627 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[admin][Success][登录成功]
