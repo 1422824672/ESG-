@@ -258,7 +258,7 @@ export default {
       }, `csurpCompany_${new Date().getTime()}.xlsx`)
     },
     toIndex(row) {
-      this.$router.push({ path: "/csurpIndex/csurpIndex", query: {companyId: row.id} });
+      this.$router.push({ path: "/csurpIndex/csurpIndex", query: {companyId: row.id}});
     }
   }
 };
