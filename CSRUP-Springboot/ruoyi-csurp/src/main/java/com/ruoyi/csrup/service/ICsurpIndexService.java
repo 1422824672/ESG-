@@ -2,7 +2,6 @@ package com.ruoyi.csrup.service;
 
 import java.util.List;
 
-import com.ruoyi.common.core.domain.TreeSelect;
 import com.ruoyi.csrup.domain.CsurpIndex;
 
 /**
@@ -13,6 +12,15 @@ import com.ruoyi.csrup.domain.CsurpIndex;
  */
 public interface ICsurpIndexService 
 {
+
+    /**
+     * 查询总得分
+     *
+     * @param companyId 公司Id
+     * @return 指标
+     */
+    public Double selectTotalScore(Long companyId);
+
     /**
      * 查询指标
      * 

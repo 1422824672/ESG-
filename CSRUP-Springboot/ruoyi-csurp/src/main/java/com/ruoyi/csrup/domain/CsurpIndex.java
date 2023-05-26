@@ -4,7 +4,9 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import com.ruoyi.common.annotation.Excel;
 import com.ruoyi.common.core.domain.BaseEntity;
+import org.apache.poi.hpsf.Decimal;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,6 +34,9 @@ public class CsurpIndex extends BaseEntity
     /** 指标名称 */
     @Excel(name = "指标名称")
     private String name;
+
+    @Excel(name = "权重")
+    private BigDecimal weight;
 
     /** 显示顺序 */
     @Excel(name = "显示顺序")
@@ -69,6 +74,14 @@ public class CsurpIndex extends BaseEntity
 
     public void setNature(String nature) {
         this.nature = nature;
+    }
+
+    public BigDecimal getWeight() {
+        return weight;
+    }
+
+    public void setWeight(BigDecimal weight) {
+        this.weight = weight;
     }
 
     public String getQualitative() {
@@ -171,7 +184,7 @@ public class CsurpIndex extends BaseEntity
         return new ToStringBuilder(this,ToStringStyle.MULTI_LINE_STYLE)
             .append("id", getId())
             .append("parentId", getParentId())
-            .append("name", getName())
+            .append("name", getName()).append("weight", getWeight())
             .append("sort", getSort())
             .append("nature", getNature())
             .append("qualitative", getQualitative())
