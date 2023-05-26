@@ -9,6 +9,7 @@
         <result property="parentId" column="parent_id"/>
         <result property="companyId" column="company_id"/>
         <result property="name" column="name"/>
+        <result property="weight" column="weight"/>
         <result property="sort" column="sort"/>
         <result property="nature" column="nature"/>
         <result property="qualitative" column="qualitative"/>
@@ -27,6 +28,7 @@
                parent_id,
                company_id,
                name,
+               weight,
                sort,
                nature,
                qualitative,
@@ -50,6 +52,14 @@
         </where>
     </select>
 
+    <select id="countThirdIndex" parameterType="CsurpIndex" resultType="Integer">
+        select count(*) where parent_id = #{parentId} and company_id = #{companyId}
+    </select>
+
+    <select id="countSecondIndex" parameterType="CsurpIndex" resultType="Integer">
+        select count(*) where parent_id = 0 and company_id = #{companyId}
+    </select>
+
     <select id="selectCsurpIndexById" parameterType="Long" resultMap="CsurpIndexResult">
         <include refid="selectCsurpIndexVo"/>
         where id = #{id}
@@ -61,6 +71,7 @@
             <if test="parentId != null">parent_id,</if>
             <if test="companyId != null">company_id,</if>
             <if test="name != null and name != ''">name,</if>
+            <if test="weight != null">weight,</if>
             <if test="sort != null">sort,</if>
             <if test="qualitative != null and qualitative != ''">qualitative,</if>
             <if test="nature != null and nature != ''">nature,</if>
@@ -77,6 +88,7 @@
             <if test="parentId != null">#{parentId},</if>
             <if test="companyId != null">#{companyId},</if>
             <if test="name != null and name != ''">#{name},</if>
+            <if test="weight != null">#{weight},</if>
             <if test="sort != null">#{sort},</if>
             <if test="nature != null and nature != ''">#{nature},</if>
             <if test="qualitative != null and qualitative != ''">#{qualitative},</if>
@@ -97,6 +109,7 @@
             <if test="parentId != null">parent_id = #{parentId},</if>
             <if test="companyId != null">company_id = #{companyId},</if>
             <if test="name != null and name != ''">name = #{name},</if>
+            <if test="weight != null">weight = #{weight},</if>
             <if test="sort != null">sort = #{sort},</if>
             <if test="nature != null and nature != ''">nature = #{nature},</if>
             <if test="qualitative != null and qualitative != ''">qualitative = #{qualitative},</if>

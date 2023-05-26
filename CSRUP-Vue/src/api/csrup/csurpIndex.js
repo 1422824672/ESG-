@@ -17,6 +17,14 @@ export function getCsurpIndex(id) {
   })
 }
 
+// 查询总得分
+export function getTotalScore(companyId) {
+  return request({
+    url: '/csrup/csurpIndex/total/' + companyId,
+    method: 'get'
+  })
+}
+
 // 新增指标
 export function addCsurpIndex(data) {
   return request({

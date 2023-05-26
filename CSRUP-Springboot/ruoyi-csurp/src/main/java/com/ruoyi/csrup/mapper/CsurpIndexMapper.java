@@ -20,6 +20,22 @@ public interface CsurpIndexMapper
     public CsurpIndex selectCsurpIndexById(Long id);
 
     /**
+     * 查询三级指标数
+     *
+     * @param csurpIndex 指标主键
+     * @return 指标
+     */
+    public Integer countThirdIndex(CsurpIndex csurpIndex);
+
+    /**
+     * 查询二级指标数
+     *
+     * @param csurpIndex 指标主键
+     * @return 指标
+     */
+    public Integer countSecondIndex(CsurpIndex csurpIndex);
+
+    /**
      * 查询指标列表
      * 
      * @param csurpIndex 指标
