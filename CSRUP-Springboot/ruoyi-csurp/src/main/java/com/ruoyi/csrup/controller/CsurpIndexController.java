@@ -1,6 +1,8 @@
 package com.ruoyi.csrup.controller;
 
+import java.math.BigDecimal;
 import java.util.List;
+import java.util.Objects;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ruoyi.common.core.domain.entity.SysDept;
@@ -24,6 +26,8 @@ import com.ruoyi.csrup.service.ICsurpIndexService;
 import com.ruoyi.common.utils.poi.ExcelUtil;
 import com.ruoyi.common.core.page.TableDataInfo;
 
+import static java.lang.String.valueOf;
+
 /**
  * 指标Controller
  *
@@ -43,6 +47,15 @@ public class CsurpIndexController extends BaseController {
     public AjaxResult list(CsurpIndex csurpIndex) {
         List<CsurpIndex> list = csurpIndexService.selectCsurpIndexList(csurpIndex);
         return success(list);
+    }
+
+    /**
+     * 查询总得分
+     */
+    @GetMapping(value = "/total/{id}")
+    public AjaxResult list(@PathVariable("id") Long companyId) {
+        Double score = csurpIndexService.selectTotalScore(companyId);
+        return success(score);
     }
 
     /**

@@ -31,7 +31,7 @@
       <el-table-column label="定量" align="center" prop="quantify" show-overflow-tooltip />
       <el-table-column label="填写说明" align="center" prop="illustrate" show-overflow-tooltip />
       <el-table-column label="指标评分" align="center" prop="score" show-overflow-tooltip />
-      <el-table-column label="备注" align="center" prop="remark" show-overflow-tooltip />
+      <el-table-column label="审批意见" align="center" prop="remark" show-overflow-tooltip />
       <el-table-column label="操作" align="center" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button size="mini" type="text" icon="el-icon-plus" @click="handleAdd(scope.row)" v-hasRole="['verify', 'admin']" :disabled="companyInfo.status === '1'">新增</el-button>
@@ -75,11 +75,13 @@
         <el-form-item label="填写说明" prop="illustrate">
           <el-input v-model="form.illustrate" placeholder="请输入填写说明" />
         </el-form-item>
-        <el-form-item label="指标评分" prop="score" v-if="checkRole(['admin', 'verify'])">
-          <el-input-number v-model="form.score" :precision="2" :step="0.1" :max="1" :min="0"
-            :disabled="showScore"></el-input-number>
+        <el-form-item label="指标权重" prop="score" v-if="checkRole(['admin', 'verify']) && checkIndex()">
+          <el-input-number v-model="form.weight" :precision="2" :step="0.1" :max="1" :min="0"></el-input-number>
         </el-form-item>
-        <el-form-item label="备注" prop="remark" v-if="checkRole(['admin', 'verify'])">
+        <el-form-item label="指标评分" prop="score" v-if="checkRole(['admin', 'verify'])">
+          <el-input-number v-model="form.score" :precision="2" :step="0.1" :max="1" :min="0"></el-input-number>
+        </el-form-item>
+        <el-form-item label="审批意见" prop="remark" v-if="checkRole(['admin', 'verify'])">
           <el-input v-model="form.remark" type="textarea" placeholder="请输入内容" />
         </el-form-item>
       </el-form>
@@ -92,7 +94,14 @@
 </template>
 
 <script>
-import { listCsurpIndex, getCsurpIndex, delCsurpIndex, addCsurpIndex, updateCsurpIndex } from "@/api/csrup/csurpIndex";
+import {
+  listCsurpIndex,
+  getCsurpIndex,
+  delCsurpIndex,
+  addCsurpIndex,
+  updateCsurpIndex,
+  getTotalScore
+} from "@/api/csrup/csurpIndex";
 import { getCsurpCompany } from "@/api/csrup/csurpCompany";
 import { checkPermi, checkRole } from "@/utils/permission"; // 权限判断函数
 import Treeselect from "@riophae/vue-treeselect";
@@ -157,9 +166,6 @@ export default {
     this.getList();
     this.getCompanyInfo();
   },
-  watch() {
-
-  },
   methods: {
     checkPermi,
     checkRole,
@@ -173,11 +179,10 @@ export default {
       this.loading = true;
       this.queryParams.companyId = this.$route.query.companyId
       listCsurpIndex(this.queryParams).then(response => {
-        let totalAmount = 0
-        response.data.forEach(item => {
-          totalAmount = Number(totalAmount) + Number(item.score)
-        })
-        this.totalAmount = totalAmount
+        getTotalScore(this.$route.query.companyId).then (response => {
+          this.totalAmount = response.data;
+          }
+        );
         this.csurpIndexList = this.handleTree(response.data, "id");
         this.loading = false;
       });
@@ -194,6 +199,7 @@ export default {
         parentId: 0,
         companyId: null,
         name: null,
+        weight: null,
         sort: null,
         qualitative: null,
         quantify: null,
@@ -207,6 +213,10 @@ export default {
         nature: []
       };
       this.resetForm("form");
+    },
+    /** 判断是否为二级指标 **/
+    checkIndex() {
+      return this.form.parentId === 0;
     },
     /** 搜索按钮操作 */
     handleQuery() {
